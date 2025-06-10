@@ -61,13 +61,8 @@ void Logo::update()
     while (!gameOver)
     {
         while (SDL_PollEvent(&event))
-        {
             if (event.type == SDL_QUIT)
-            {
-                std::cout << "Bye Bye :D" << std::endl;
                 gameOver = true;
-            }
-        }
 
         SDL_RenderClear(Logo::gameRenderer);
 
